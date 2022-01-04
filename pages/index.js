@@ -1,13 +1,28 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Next News Api</title>
       </Head>
-    </div>
+      <div
+        className="container"
+      >
+        <div>
+          <h1
+            className={styles.header}
+          >
+            News API
+          </h1>
+          <p
+            className={styles.subtitle}
+          >
+            The Place for all your news
+          </p>
+        </div>
+      </div>
+    </>
   )
 }
