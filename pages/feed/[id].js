@@ -1,5 +1,6 @@
 // react components
 import { Navbar } from "../../components/navbar";
+import { NextBar } from "../../components/nextbar";
 
 export function Feed({ pageNumber, articles }) {
   return (
@@ -15,6 +16,7 @@ export function Feed({ pageNumber, articles }) {
           </p>
         </div>
       )}
+      <NextBar pageNumber={pageNumber}/>
     </>
   );
 }

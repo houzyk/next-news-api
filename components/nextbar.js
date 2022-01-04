@@ -4,18 +4,17 @@ import { useRouter } from "next/router";
 // css
 import styles from "../styles/Nextbar.module.css";
 
-export function Nextbar () {
+export function NextBar ({pageNumber}) {
   const router = useRouter();
 
   return (
-    <div className={styles.navbar}>
+    <div className={styles.nextbar}>
       <div
         onClick={() => router.push('/')}>
         Home
       </div>
-      <div
-        onClick={() => router.push('/feed/1')}>
-        Feed
+      <div>
+        {pageNumber}
       </div>
       <div
         onClick={() => router.push('/about')}>
