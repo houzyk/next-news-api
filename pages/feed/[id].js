@@ -1,6 +1,20 @@
+// react components
+import { Navbar } from "../../components/navbar";
+
 export function Feed({ pageNumber, articles }) {
   return (
     <>
+    <Navbar/>
+      {articles.map( article =>
+        <div key={article.url}>
+          <h1>
+            {article.title}
+          </h1>
+          <p>
+            {article.description}
+          </p>
+        </div>
+      )}
     </>
   );
 }
